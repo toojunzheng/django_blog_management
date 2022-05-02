@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px; 
+}
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('../images/images.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.P_wrapper{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../images/plant-background-1522907595NpW.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial{
+    padding:30px 100px;
+}
+
+article{
+    color:#fff;
+}
+
+article h1{
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.0px;
+}
+
+article h1:after{
+    content:"";
+    height: 5px;
+    width:225px;
+    background-color: #fff;
+    display: block;
+    margin:auto;
+     
+}
+article img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 60px;
+}
+
+blockquote{
+    font-family: sans-serif;
+    font-size: 35px;
+    margin-top: 60px;
+
+}
+
+article h5{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 1.5px
+}
+
+article p{
+    font-size: 17px;
+}
+
+body {
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-header{
+    overflow:hidden;
+}
+
+.card-header img{
+    width: 100%;
+    transition: transform 2s;
+}
+
+.card-header:hover img{
+    transform: scale(1.1);
+}
+
+.img_cen img{
+    width: 1100px; 
+    height: 225px; 
+    object-fit: cover; 
+    object-position: 0% 14%;
+}
+
+.img_cen .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    color:#ffffff;
+}

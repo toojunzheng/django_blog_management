@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+<head>
+   <title>{% block title %}About Me{% endblock %}</title>
+</head>
+
+{% block content %}
+<body>
+	<div class="wrapper">
+		<div class="testimonial">
+			<article>
+				<h1>About Me</h1>
+				<img src="{% static '/images/plant.jpg' %}"  >
+				<blockquote>
+					Waste not the smallest thing created, for grains of sand make mountains and atomies infinity.
+				</blockquote>
+				<h5>Jun Zheng</h5>
+				<p>3rd year Electronic Engineering student, currently studying at USM, Engineering Campus.</p>
+			</article>
+		</div>
+	</div>
+
+</body>
+{% endblock %}
+

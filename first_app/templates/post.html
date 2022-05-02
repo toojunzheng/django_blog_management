@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content %}
+ <!--   <a href="/"><- Back to index!!!</a><br /><br /> -->
+	<div class="P_wrapper">
+		<div class="testimonial">
+			<h2>{{ post.title }}</h2>
+			<img src="{{ post.image.url }}" alt="Card image cap"  class:"center" style="object-fit:contain;width:auto;height:400px; margin-bottom:30px;"/>
+			<div>
+				<p style="text-align:justify;">{{ post.content  }}</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
